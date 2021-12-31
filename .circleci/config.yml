@@ -10,7 +10,8 @@ jobs:
           command: npm install
       - run:
           command: npm test
-
+      - run: pwd
+      
 workflows:
   version: 2
   build_wf:
