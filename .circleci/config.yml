@@ -6,10 +6,8 @@ jobs:
       - image: cimg/node:14.10.1
     steps:
       - checkout
-      - run:
-          command: npm install
-      - run:
-          command: npm test
+      - run: npm install 
+      - run: npm test
       - run: pwd
       
 workflows:
